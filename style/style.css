@@ -8,8 +8,6 @@ body{
     font-family: 'Ubuntu' , sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
 }
 header{
     display: inline;
@@ -37,6 +35,7 @@ nav a {
 nav a:hover {
     font-weight: bold;
 }
+
 .content {
     display: flex;
     flex: 5;
@@ -61,34 +60,115 @@ nav a:hover {
     margin-right: 100px;
 }
 
-main{
-    display: flex;
-    flex-flow: column;
-    background-color: #c6deee;
-}
 .content .skill {
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-flow: column;
     align-items: center;
+    background-color: #c6deee;
 }
 .content .skill .skillContent{
     display: flex;
 }
-
 .card{
     margin: 10px;
     flex: 1;
 }
-.card .header img{
+.content .skill .skillContent .card .header img{
     max-width: 150px;
+    display: block;
+    margin: 0 auto;
 }
-.card .header{
+.content .skill .skillContent .card .header{
     height: 150px;
     align-items: center;
     margin: 10px auto;
 }
 .card .brief-content{
     text-align: center;
+}
+
+.content .experience{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #0c95ff;
+}
+.content .experience .experienceContent{
+    display: flex;
+}
+.content .experience .experienceContent .card {
+    box-shadow: 0 4px 5px 1px gray;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #b0d8ee;
+    padding: 0 3px;
+}
+.content .experience .experienceContent .card .header{
+    max-height: 25px;
+    align-items: center;
+    margin: 15px auto;
+}
+.content .experience .experienceContent .header img{
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+aside{
+    background-color: #c6deee;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+aside .profile-card{
+    box-shadow: 0 4px 5px 1px gray;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #0c95ff;
+    padding: 15px;
+    margin: 20px;
+}
+.profile-card header h2{
+    margin: 15px auto;
+    align-items: center;
+    text-align: center;
+}
+.profile-card header img{
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    padding: 15px;
+    color: white;
+    background-color: #0626ff;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+    p{
+        font-size: 0.80rem;
+    }
+    main h4 {
+        font-size: 2rem;
+    }
+    main h3 {
+        font-size: 2.5rem;
+    }
+    main .content .brief-introduce .text p {
+        font-size: 2rem;
+    }
 }

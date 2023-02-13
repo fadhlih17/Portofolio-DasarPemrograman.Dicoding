@@ -11,15 +11,16 @@
   <nav class="nav-list">
       <ul>
           <li><a href="#">HOME</a></li>
-          <li><a href="#">SKILL</a></li>
-          <li><a href="#">EXPERIENCE</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#myskill">SKILL</a></li>
+          <li><a href="#myexperience">EXPERIENCE</a></li>
+          <li><a href="#contact">CONTACT</a></li>
       </ul>
   </nav>
 </header>
 
 <main>
     <div class="content">
+
         <div class="brief-introduce">
             <div class="text">
                 <h4>Hi, i'm Fadhlih</h4>
@@ -31,10 +32,10 @@
             </div>
         </div>
 
-        <div class="skill">
+        <div class="skill" id="myskill">
             <h2> My Skill</h2>
             <div class="skillContent">
-                <div class="card">
+                <article class="card">
                     <div class="header">
                         <img src="img/c%23.png" alt="c#">
                     </div>
@@ -43,8 +44,8 @@
                             C# is one of popular Program Language
                         </p>
                     </div>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <div class="header">
                         <img src="img/java.png" alt="Java">
                     </div>
@@ -53,8 +54,8 @@
                             The Most OOP Programming Language
                         </p>
                     </div>
-                </div>
-                <div class="card">
+                </article>
+                <article class="card">
                     <div class="header">
                         <img src="img/asp-net-core.png" alt="Asp-Net-Core">
                     </div>
@@ -63,13 +64,71 @@
                             For making RestFul-Api using C# Language
                         </p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
-        <div class="experience">
 
+        <div class="experience" id="myexperience">
+            <h2>My Experience</h2>
+            <div class="experienceContent">
+                <article class="card">
+                    <div class="header">
+                        <img src="img/yamaha.png" alt="Yamaha Music">
+                    </div>
+                    <div class="brief-content">
+                        <h5>Quality Assurance </h5>
+                        <p>2 Years</p>
+                        <p>I had been working at PT Yamaha Music Manufacturing Ind for 2 years as Quality Assurance. Some of my jobs are checking the guitar quality,
+                        problem solving and responsible with Guitar Quality</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="header">
+                        <img src="img/akebono.png" alt="Akebono">
+                    </div>
+                    <div class="brief-content">
+                        <h5>Production Operator</h5>
+                        <p>1 year</p>
+                        <p>I had been working at PT Akebono Brake Astra Indonesia for a year as Production Operator. Some of my jobs are responsible to Assemble the brake car system
+                        and some other workings</p>
+                    </div>
+                </article>
+            </div>
         </div>
+
+        <aside>
+            <article class="profile-card" id="contact">
+                <header>
+                    <h2>My Profile</h2>
+                    <img src="img/myphoto.jpg" alt="Fadhlih's Photo">
+                    <p>
+                    </p>
+                </header>
+                <section>
+                    <h3>More Information</h3>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <td>Fadhlih Girindra Putra</td>
+                        </tr>
+                        <tr>
+                            <th>Born</th>
+                            <td>Bekasi, 17 November 2000</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>fadhlihgp@gmail.com</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
     </div>
 </main>
+
+<footer>
+    <p>Learn Basic Web Programming &#169; 2023, Dicoding Academy</p>
+</footer>
+
 </body>
 </html>
