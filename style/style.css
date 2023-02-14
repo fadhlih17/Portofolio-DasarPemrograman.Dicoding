@@ -3,6 +3,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     height: 100vh;
     font-family: 'Ubuntu' , sans-serif;
@@ -13,10 +16,10 @@ header{
     display: inline;
 }
 nav{
+    width: 100%;
     background-color: #0c95ff;
     padding: 5px;
-    position: sticky;
-    top: 0;
+    position: fixed;
 }
 nav ul {
     padding-inline: 4rem;
